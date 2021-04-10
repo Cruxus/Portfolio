@@ -1,49 +1,167 @@
 body{
-    font-family: 'JetBrains Mono', monospace;
-    background-color: #191919;
+    font-family: 'DIN Next W1G';
+    background-image: url("background.jpg");
+    background-size: cover;
     color: #FFFFFF;
+    font-size: 18px;
     margin: 0;
 }
-/* Header */
 
+/* --- Header --- */
 
 #menu{
-    background-color: #3D444C;
+    background-color: #373740;
     display: flex;
     justify-content: space-around;
+    color: #E2D8CF;
+    border-radius: 0 0 0 65px;
 }
 
 #logo{
     width: 80px;
+    color: #E2D8CF;
 }
 
 ul{
-    width: 500px;
+    width: 700px;
     display: flex;
+    justify-content: space-evenly;
     list-style: none;
+    padding: 15px;
 }
 
-ul > li{
-    margin-right: 30px;
+ul li a{
+    text-decoration: none;
+    color: #E2D8CF;
 }
 
-/* Main */
+ul li a:hover{
+    color: #FFF;
+    transition: 0.7s;
+    border-bottom: solid 4px #FFF;
+    padding-bottom: 30px;
+}
+
+/* --- Main --- */
 main{
-    width: 960px;
+    width: 1200px;
     margin: 0 auto;
 }
 
+/* --- Container1 --- */
+
 h2{
-    margin: 70px 0px;
+    font-family: 'Tungsten';
+    font-size: 90px;
+    margin: 10px;
+    color: #E2D8CF;
 }
 
-.presentation{
+.container1{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container1 img{
+    height: 100%;
+    width: 400px;
+}
+
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.cases{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-p, #myself{
-    width: 300px;
 }
 
+.case1{
+    width: 40px;
+    height: 10px;
+    background-color: #E2D8CF;
+    margin-right: 10px;
+}
+
+.case2{
+    width: 38px;
+    height: 8px;
+    border: 1px solid #E2D8CF;
+}
+
+.case2:hover{
+    background-color: #E2D8CF;
+    transition: 0.7s;
+}
+
+/* --- Container2 --- */
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container2 img{
+    margin-top: 120px;
+    border-radius: 15px;
+    border: 0.5px solid #3D444C;
+}
+
+.button{
+    width: 230px;
+    margin: 25px 0px 0px 100px;
+    padding: 10px 0.5px;
+    border: 0.5px solid #E2D8CF;
+    text-align: center;
+}
+
+.button a{
+    font-size: 30px;
+    padding: 6px 73px;
+    font-family: 'DIN Condensed';
+    text-decoration: none;
+    color: #E2D8CF;
+    border: 0.5px solid #E2D8CF;
+}
+
+/* --- Container3 --- */
+
+.container3{
+    margin-top: 100px;
+}
+.container4{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+h3{
+    font-family: 'DIN Condensed';
+    font-size: 20px;
+    color: #E2D8CF;
+    text-align: right;
+}
+
+.post{
+    width: 400px;
+    height: 400px;
+    padding: 40px 80px 40px 80px;
+    background-color: #373740;
+    border-radius: 15px;
+}
+.add{
+    height: 30px;
+    width: 30px;
+    padding-left: 400px;
+    padding-top: 40px;
+}
 /* Footer */
+footer{
+    margin: 100px;
+    text-align: center;
+}
