@@ -1,7 +1,8 @@
 body{
     font-family: 'DIN Next W1G';
     background-image: url("images/background.jpg");
-    background-size: cover;
+    /* --- background-size: cover; --- */
+    background-size: auto;
     color: #FFFFFF;
     font-size: 18px;
     margin: 0;
@@ -44,7 +45,7 @@ ul li a:hover{
 
 /* --- Main --- */
 main{
-    width: 1200px;
+    width: 1280px;
     margin: 0 auto;
 }
 
@@ -129,6 +130,13 @@ h2{
     border: 0.5px solid #E2D8CF;
 }
 
+.button a:hover{
+    color: #373740;
+    background-color: #E2D8CF;
+    border: 0.5px solid #E2D8CF;
+    transition: 0.7s;
+}
+
 /* --- Container3 --- */
 
 .container3{
@@ -141,10 +149,20 @@ h2{
 }
 
 h3{
+    font-family: 'Tungsten';
+    font-size: 70px;
+    margin: 10px;
+    color: #E2D8CF;
+    display: flex;
+    justify-content: left;
+}
+
+.info{
     font-family: 'DIN Condensed';
     font-size: 20px;
     color: #E2D8CF;
-    text-align: right;
+    display: flex;
+    justify-content: right;
 }
 
 .post{
@@ -154,6 +172,21 @@ h3{
     background-color: #373740;
     border-radius: 15px;
 }
+
+.post:hover{
+    background-color: #E2D8CF;
+    color: #373740;
+    transition: 0.7s;
+}
+
+.post:hover h3{
+    color: #373740;
+}
+
+.post:hover .info{
+    color: #373740;
+}
+
 .add{
     height: 30px;
     width: 30px;
